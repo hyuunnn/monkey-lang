@@ -17,7 +17,7 @@ func New(input string) *Lexer {
 
 // ASCII 문자만 지원하고 있다.
 // 유니코드, UTF-8을 지원하기 위해서는 byte -> rune 타입으로 바꾸고, 다음 문자를 읽는 방식을 바꿔야 한다. (유니코드는 문자 하나에 여러 개의 바이트가 할당되기 때문)
-// 책에서는 위 기능을 구현하는 것을 연습 문제로 만들었다.
+// 책에서는 위 기능을 구현하는 것을 연습 문제로 만들었다. - p10
 func (l *Lexer) readChar() {
 	if l.readPosition >= len(l.input) {
 		l.ch = 0
@@ -118,6 +118,8 @@ func (l *Lexer) skipWhitespace() {
 	}
 }
 
+// TODO: 실수, 16진수 등의 숫자 지원하기
+// 책에서는 단순화하여 정수만 지원하기로 했다. - p18
 func (l *Lexer) readNumber() string {
 	position := l.position
 	for isDigit(l.ch) {
