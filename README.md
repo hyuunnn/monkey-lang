@@ -19,3 +19,13 @@
 <a href="https://github.com/NightShade256/prymate">prymate - Python</a>
 
 <a href="https://github.com/MarioAriasC/bruno">bruno - Python</a>
+
+<a href="https://github.com/abhinav-upadhyay/cmonkey">cmonkey - C</a>
+
+<a href="https://github.com/dannyvankooten/monkey-c-monkey-do/">monkey-c-monkey-do - C</a>
+
+<a href="https://github.com/kgabis/ape">Ape - C</a>
+
+<a href="https://github.com/zhuzilin/monkey">monkey - C++</a>
+
+<a href="https://github.com/yhirose/monkey-cpp">monkey-cpp - C++</a>
