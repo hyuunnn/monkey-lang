@@ -11,3 +11,11 @@
 <a href="https://github.com/richardjennings/prattparser">richardjennings - prattparser</a>
 
 <a href="https://github.com/wren-lang/wren/blob/main/src/vm/wren_compiler.c">wren_compiler.c</a>
+
+<a href="https://github.com/skx/monkey">monkey - Go</a>
+
+<a href="https://github.com/thoqbk/tholangforfun">tholangforfun - Java</a>
+
+<a href="https://github.com/NightShade256/prymate">prymate - Python</a>
+
+<a href="https://github.com/MarioAriasC/bruno">bruno - Python</a>
