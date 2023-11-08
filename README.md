@@ -10,6 +10,8 @@
 
 <a href="https://github.com/richardjennings/prattparser">richardjennings - prattparser</a>
 
+<a href="https://github.com/zakirullin/tiny-compiler">tiny-compiler</a>
+
 <a href="https://github.com/wren-lang/wren/blob/main/src/vm/wren_compiler.c">wren_compiler.c</a>
 
 <a href="https://github.com/skx/monkey">monkey - Go</a>
