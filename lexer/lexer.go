@@ -47,6 +47,8 @@ func (l *Lexer) NextToken() token.Token {
 	case '-':
 		tok = newToken(token.MINUS, l.ch)
 	case '!':
+		// 더 다양한 두 문자 토큰을 지원하고자 한다면, makeTwoCharToken과 같은 메서드로 동작을 추상화해야 할 것이다.
+		// 그러나 현재는 !=, == 2개만 지원하므로 따로 만들지 않음 - p27
 		if l.peekChar() == '=' {
 			ch := l.ch
 			l.readChar()
@@ -132,6 +134,7 @@ func isDigit(ch byte) bool {
 	return '0' <= ch && ch <= '9'
 }
 
+// 입력을 미리 살피고 처리하는 함수 (look ahead)
 func (l *Lexer) peekChar() byte {
 	if l.readPosition >= len(l.input) {
 		return 0
