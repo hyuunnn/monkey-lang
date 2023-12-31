@@ -134,7 +134,7 @@ func isDigit(ch byte) bool {
 	return '0' <= ch && ch <= '9'
 }
 
-// 입력을 미리 살피고 처리하는 함수 (look ahead)
+// 입력을 미리 살피고 처리하는 함수 (look ahead) - p25
 func (l *Lexer) peekChar() byte {
 	if l.readPosition >= len(l.input) {
 		return 0
