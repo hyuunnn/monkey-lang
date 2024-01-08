@@ -4,9 +4,9 @@ import "monkey/token"
 
 type Lexer struct {
 	input        string
-	position     int
-	readPosition int
-	ch           byte
+	position     int  // 입력에서 현재 위치 (현재 문자를 가리킴)
+	readPosition int  // 입력에서 현재 읽는 위치 (현재 문자의 다음을 가리킴)
+	ch           byte // 현재 조사하고 있는 문자
 }
 
 func New(input string) *Lexer {
@@ -65,12 +65,12 @@ func (l *Lexer) NextToken() token.Token {
 		tok = newToken(token.GT, l.ch)
 	case ';':
 		tok = newToken(token.SEMICOLON, l.ch)
-	case ',':
-		tok = newToken(token.COMMA, l.ch)
 	case '(':
 		tok = newToken(token.LPAREN, l.ch)
 	case ')':
 		tok = newToken(token.RPAREN, l.ch)
+	case ',':
+		tok = newToken(token.COMMA, l.ch)
 	case '{':
 		tok = newToken(token.LBRACE, l.ch)
 	case '}':

@@ -5,16 +5,6 @@ import (
 	"monkey/token"
 )
 
-func (p *Program) String() string {
-	var out bytes.Buffer
-
-	for _, s := range p.Statements {
-		out.WriteString(s.String())
-	}
-
-	return out.String()
-}
-
 type Node interface {
 	TokenLiteral() string
 	String() string
@@ -40,6 +30,16 @@ func (p *Program) TokenLiteral() string {
 	} else {
 		return ""
 	}
+}
+
+func (p *Program) String() string {
+	var out bytes.Buffer
+
+	for _, s := range p.Statements {
+		out.WriteString(s.String())
+	}
+
+	return out.String()
 }
 
 type LetStatement struct {
@@ -95,7 +95,7 @@ func (rs *ReturnStatement) String() string {
 }
 
 type ExpressionStatement struct {
-	Token      token.Token // 표현식의 첫 토큰
+	Token      token.Token // 표현식의 첫 번째 토큰
 	Expression Expression
 }
 

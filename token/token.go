@@ -22,8 +22,10 @@ const (
 	ASTERISK = "*"
 	SLASH    = "/"
 
-	LT = "<"
-	GT = ">"
+	LT     = "<"
+	GT     = ">"
+	EQ     = "=="
+	NOT_EQ = "!="
 
 	// 구분자
 	COMMA     = ","
@@ -34,10 +36,7 @@ const (
 	LBRACE = "{"
 	RBRACE = "}"
 
-	EQ     = "=="
-	NOT_EQ = "!="
-
-	// 예약어
+	// 키워드
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
 	TRUE     = "TRUE"
